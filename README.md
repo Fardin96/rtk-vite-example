@@ -1,3 +1,6 @@
+# Learning-RTK-Query
+Just getting my hands dirty with redux-toolkit. Learning all the common use-cases including both synchronous and asynchronous logic and data fetching.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
