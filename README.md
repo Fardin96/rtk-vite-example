@@ -1,5 +1,5 @@
 # Learning-RTK-Query
-Just getting my hands dirty with redux-toolkit. Learning all the common use-cases including both synchronous and asynchronous logic and data fetching.
+Just getting my hands dirty with redux-toolkit. Learning all the common use-cases including both synchronous and asynchronous logic and data fetching. Also, my first encounter with vite. 
 
 # React + Vite
 
