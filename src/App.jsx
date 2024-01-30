@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-target-blank */
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -6,48 +7,13 @@ import './App.css'
 import {useDispatch, useSelector} from 'react-redux'
 
 import { selectCount, increment, decrement } from './redux-toolkit/feature/counter/counter-slice'
-import { useCreateEmpMutation, useGetEmpQuery, useGetOneEmpQuery } from './redux-toolkit/feature/employees-api/employees-api-slice'
 import { useCreateTodoMutation, useGetTodosByIdQuery, useGetTodosQuery, useUpdateTodoMutation } from './redux-toolkit/feature/demo-api/demo-api-slice'
 
 function App() {
+  //! used ONLY for synchronous code
   const count = useSelector(selectCount)
   const dispatch = useDispatch()
   
-    // GET
-    // const { data, isLoading, isError, error } = useGetEmpQuery()
-    // const { data, isLoading, isError, error } = useGetOneEmpQuery(10)
-    // if(data){
-    //   console.log(JSON.stringify(data))
-    // }
-
-    // POST
-    // const[createEmp] = useCreateEmpMutation()
-    // const handleSubmit = async (e) => {
-
-    //   // const data = {
-    //   //   "name": "farabi", 
-    //   //   "salary": "50000", 
-    //   //   "age": "27"
-    //   // }
-    //   // const res = await createEmp(data)
-
-    //   // const data = {
-    //   //   name: "fardin", 
-    //   //   salary: 100000, 
-    //   //   age: 27
-    //   // }
-    //   // console.log(JSON.stringify(data))
-    //   // const res = await createEmp(JSON.stringify(data))
-
-    //   // const resData = await JSON.stringify(res)
-      
-    //   // console.log(res.data)
-    //   // const response = JSON.stringify(res)
-    //   // if(response.status === 'success'){
-    //   //   console.log(response)
-    //   // }
-    // }
-
     // GET examples
     // const {data, isLoading, isError, error} = useGetTodosQuery()
     // const handleSubmit = async (e) => {
@@ -138,10 +104,11 @@ function App() {
       <button 
         onClick={e => handleSubmit(e)}
       >
-        press
+        call api
       </button>
 
-      {/* <div className="card">
+      {/*uncomment this to get counter */}
+      <div className="card">
         <button 
         onClick={() => dispatch(increment())}
         >
@@ -160,7 +127,7 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-      </div> */}
+      </div>
 
       <div>
 

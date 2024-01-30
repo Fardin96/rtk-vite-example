@@ -1,6 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const todosApiSlice = createApi({
+  //!   for multiple API reducers,
+  //!   each reducer path needs to different!
   reducerPath: 'demo-slice-api',
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://calm-plum-jaguar-tutu.cyclic.app',
